@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(page color #FFADAD 0%, #FF8686 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+}
+
+.fencingstick{
+    height: 70px;
+    width: 30px;
+    background-color: #6B0505;
+    border-radius: 10%;
+    }
+
+    .fencingstick-1{
+        top: 70px;
+        left: 90px;
+    }
+
+    .fencingstick-2{
+        top: 70px;
+        left: 105px;
+    }
+
+    .fencingstick-3{
+        top: 70px;
+        left: 130px;
+    }
+
+    .fencingstick-4{
+        top: 70px;
+        left: 145px;
+    }
+
+    .fencingstick-5{
+        top: 70px;
+        left: 160px;
+    }
+
+    .fencingstick-6{
+        top: 70px;
+        left: 175px;
+    }
+
+    .head{
+        width: 60px;
+        height: 40px;
+        top: 120px;
+        left: 80px;
+        background-color: #FFF8DA;
+        border-radius: 100%;
+        border-top: #F0E8C8;
+        border-bottom: #FFFCEC;
+        border-style: url("noise(perlin 5px)");
+    }
+
+.nose{
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid #651616;
+    border-right: 5px solid #651616;
+    border-bottom: 5px solid #651616;
+    border-radius: 20%;
+}
+
+.eyeline{
+    width: 0px;
+    height: 0px;
+    border-left: 5px;
+    border-right: 5px;
+    border-radius: 20%;
+}
