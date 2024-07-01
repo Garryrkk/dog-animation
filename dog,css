@@ -1,146 +1,163 @@
-body{
-    background: linear-gradient(page color #FFADAD 0%, #FF8686 100%);
+body {
+    background: linear-gradient(to bottom, #FFADAD 0%, #FF8686 100%);
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
     background-position: center;
+    margin: 0;
 }
 
-.fencingstick{
+.fencingstick {
+    position: absolute;
     height: 70px;
     width: 30px;
     background-color: #6B0505;
     border-radius: 10%;
-    }
+}
 
-    .fencingstick-1{
-        top: 70px;
-        left: 90px;
-    }
-
-    .fencingstick-2{
-        top: 70px;
-        left: 105px;
-    }
-
-    .fencingstick-3{
-        top: 70px;
-        left: 130px;
-    }
-
-    .fencingstick-4{
-        top: 70px;
-        left: 145px;
-    }
-
-    .fencingstick-5{
-        top: 70px;
-        left: 160px;
-    }
-
-    .fencingstick-6{
-        top: 70px;
-        left: 175px;
-    }
-
-    .head{
-        width: 60px;
-        height: 40px;
-        top: 120px;
-        left: 80px;
-        background-color: #FFF8DA;
-        border-radius: 100%;
-        border-top: red;
-        border-bottom: red;
-        border-style: url("noise(perlin 5px)");
-    }
-
-.nose{
-    width: 0px;
-    height: 0px;
-    border-left: 5px transparent;
-    border-right: 5px transparent;
-    border-bottom: 5px solid #651616;
-    border-radius: 20%;
+.fencingstick-1 {
     top: 70px;
     left: 90px;
 }
 
-.eyeline{
-    width: 0px;
-    height: 0px;
-    border-left: 5px blue;
-    border-right: 5px blue;
-    border-bottom: 5px #651616;
-    border-radius: 20% ;
-    top: 90px;
-    left: 90px;
+.fencingstick-2 {
+    top: 70px;
+    left: 105px;
 }
 
-.eyebrow{
+.fencingstick-3 {
+    top: 70px;
+    left: 120px;
+}
+
+.fencingstick-4 {
+    top: 70px;
+    left: 135px;
+}
+
+.fencingstick-5 {
+    top: 70px;
+    left: 150px;
+}
+
+.fencingstick-6 {
+    top: 70px;
+    left: 165px;
+}
+
+.head {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: 120px;
+    left: 80px;
+    background-color: #FFF8DA;
+    border-radius: 100%;
+    border: 2px solid red;
+}
+
+.nose {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #651616;
+    top: 140px;
+    left: 107px;
+}
+
+.eyeline {
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background-color: blue;
+    top: 130px;
+    left: 100px;
+}
+
+.eyebrow {
+    position: absolute;
     width: 5px;
     height: 10px;
-    rotate: 90deg;
+    transform: rotate(90deg);
     background-color: yellow;
-    border-radius: 20%;
-    top: 100px;
-    left: 90px;
+    top: 125px;
+    left: 100px;
 }
 
-.eyeball{
-    width: 3.5px;
-    height: 3.5px;
-    border-radius: 100%;
+.eyeball {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
     background-color: #330000;
-    top:85px ;
-    left: 90px;
+    top: 130px;
+    left: 105px;
 }
 
-.eyeball2{
-    width: 2px;
-    height: 2px;
-    border-radius: 100%;
-    background-color:#6154d4 ;
-    top: 80px;
-    left: 90px;
+.eyeball2 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #6154d4;
+    top: 130px;
+    left: 115px;
 }
 
-.mouth{
-    width: 80px;
-    height: 80 px;
+.mouth {
+    position: absolute;
+    width: 40px;
+    height: 20px;
     background-color: orange;
-    clip-path: polygon(0 0, 200px, 0, 100px 150px /*curve here*/ 0 100);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    top: 160px;
+    left: 90px;
 }
 
-.mouhtline{
+.mouthline {
+    position: absolute;
     width: 2px;
     height: 5px;
     border-radius: 20%;
     background-color: purple;
-}
-.mouthbottom{
-    width: 30px;
-    height: 80px;
-    background-color: green
-    clip-path: polygon(0 0, 200px, 0, 100px 150px /*curve here*/ 0 100);
+    top: 170px;
+    left: 105px;
 }
 
-.ear1{
+.mouthbottom {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: green;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    top: 180px;
+    left: 90px;
+}
+
+.ear1 {
+    position: absolute;
     width: 20px;
     height: 50px;
-    border-left:7px magenta;
-    border-right: 7px magenta;
-    border-bottom: 2px magenta;
+    border-left: 7px solid magenta;
+    border-right: 7px solid magenta;
+    border-bottom: 2px solid magenta;
     border-radius: 30%;
+    top: 60px;
+    left: 60px;
 }
 
-.ear1boudaryr{
+.earboundaryr {
+    position: absolute;
     width: 10px;
     height: 50px;
-    border-left: mediumspringgreen;
-    border-radius: ;
+    border-left: 5px solid mediumspringgreen;
+    border-radius: 10%;
+    top: 60px;
+    left: 50px;
 }
